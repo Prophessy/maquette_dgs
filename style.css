@@ -1,0 +1,152 @@
+/* Toute la page html */
+
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+/* La navbar */
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.466);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 20px black;
+}
+
+.navbar_left {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar_left i {
+    color: greenyellow;
+}
+
+.navbar_middle {
+    color: greenyellow;
+    font-size: 25px;
+}
+
+.navbar_right {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Le bandeau */
+
+.bandeau {
+    background-image: url(./images/frites.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bandeau h1 {
+    color: green;
+    font-size: 60px;
+}
+
+.bandeau p {
+    color: white;
+    font-size: 40px;
+}
+
+/* Menu déroulant */
+
+.menu {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.menu i {
+    font-size: 30px;
+    color: greenyellow;
+    border: 3px solid white;
+    padding: 5px;
+}
+
+.menu i:hover {
+    color: grey;
+    cursor: pointer;
+    border: 3px solid grey;
+    transition-duration: 0.5s;
+}
+
+.menu_form {
+    background-color: grey;
+    height: 400px;
+    width: 300px;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icone_menu {
+    background-image: url(./images/frites.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    overflow: hidden;
+    margin-top: -50px;
+    margin-bottom: 100px;
+}
+
+/* Séparation menu */
+
+.separation_menu {
+    background-color: grey;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.separation_menu h2 {
+    color: greenyellow;
+}
+
+.separation_menu p {
+    color: white;
+}
+
+/* Deuxième menu */
+
+.menu_2 {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.menu_form_2 {
+    background-color: grey;
+    height: 400px;
+    width: 300px;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
