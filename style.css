@@ -1,6 +1,10 @@
 /* Toute la page html */
 
 * {
+    --green-color : #7CA640;
+    --grey-color : #F1F1F1;
+    --font-title: 'Kaushan Script', cursive;
+    --corps-font: 'Source Sans Pro', sans-serif;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -10,13 +14,16 @@
 
 .navbar {
     width: 100%;
-    height: 50px;
-    background-color: rgba(0, 0, 0, 0.466);
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.767);
     color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
     box-shadow: 20px black;
+    font-family: var(--corps-font);
+    position: absolute;
+    z-index: 1;
 }
 
 .navbar_left {
@@ -27,11 +34,11 @@
 }
 
 .navbar_left i {
-    color: greenyellow;
+    color: var(--green-color);
 }
 
 .navbar_middle {
-    color: greenyellow;
+    color: var(--green-color);
     font-size: 25px;
 }
 
@@ -45,41 +52,113 @@
 /* Le bandeau */
 
 .bandeau {
-    background-image: url(./images/frites.webp);
+    background-image: url(./images/black-wallpaper.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1000px;
+    height: 1100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 
 .bandeau h1 {
-    color: green;
-    font-size: 60px;
+    color: white;
+    font-size: 80px;
+    font-family: var(--font-title);
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+
+.bandeau h2 {
+    font-family: var(--font-title);
+    color: var(--green-color);
+    font-weight: 500;
+    font-size: 40px;
 }
 
 .bandeau p {
     color: white;
-    font-size: 40px;
+    font-size: 20px;
+}
+
+.bandeau button {
+    width: 150px;
+    height: 30px;
+    margin: 20px 10px;
+    color: white;
+    background-color: transparent;
+    border: 3px solid white;
+    font-size: 10px;
+}
+
+.bandeau button:hover {
+    border-color: var(--green-color);
+    background-color: var(--green-color);
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.custom-shape-divider-bottom-1650464938 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 1;
+}
+
+.custom-shape-divider-bottom-1650464938 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-bottom-1650464938 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.custom-shape-divider-bottom-1650465143 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1650465143 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 140px;
+}
+
+.custom-shape-divider-bottom-1650465143 .shape-fill {
+    fill: #7CA640;
 }
 
 /* Menu déroulant */
 
 .menu {
-    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    margin-top: -140px;
+    position: relative;
+    z-index: 1;
 }
 
 .menu i {
-    font-size: 30px;
-    color: greenyellow;
+    font-size: 25px;
+    color: var(--green-color);
     border: 3px solid white;
     padding: 5px;
+    margin-top: -50px;
 }
 
 .menu i:hover {
@@ -90,9 +169,10 @@
 }
 
 .menu_form {
-    background-color: grey;
-    height: 400px;
-    width: 300px;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 280px;
+    width: 250px;
     margin: 0 10px;
     display: flex;
     flex-direction: column;
@@ -103,50 +183,95 @@
     background-image: url(./images/frites.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100px;
-    width: 100px;
+    height: 140px;
+    width: 140px;
     border-radius: 100px;
     overflow: hidden;
     margin-top: -50px;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 }
 
-/* Séparation menu */
+.menu h2 {
+    font-family: var(--corps-font);
+    font-size: 15px;
+}
 
-.separation_menu {
-    background-color: grey;
-    height: 200px;
+.menu p {
+    font-family: var(--corps-font);
+    color: grey;
+}
+
+.menu button {
+    font-family: var(--corps-font);
+    font-size: 10px;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: transparent;
+    border: 2px solid grey;
+}
+
+.menu button:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+/* Menu du jour */
+
+.icone_couvert {
+    background-color: var(--green-color);
+    width: 100px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    border-radius: 100%;
+    margin-top: -270px;
 }
 
-.separation_menu h2 {
-    color: greenyellow;
+.icone_couvert i {
+    font-size: 40px;
+    color: #FFFFFF;
 }
 
-.separation_menu p {
-    color: white;
-}
-
-/* Deuxième menu */
-
-.menu_2 {
-    height: 600px;
+.entete_menu_du_jour {
+    width: 910px;
+    height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.menu_form_2 {
-    background-color: grey;
-    height: 400px;
-    width: 300px;
-    margin: 0 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.texte_menu_du_jour {
+    margin-left: -300px;
 }
+
+.menu_du_jour {
+    margin-top: 150px;
+    height: 500px;
+    background-color: var(--grey-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu_du_jour_h2 {
+    color: var(--green-color);
+    font-family: var(--font-title);
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.menu_du_jour_p {
+    font-family: var(--corps-font);
+    font-size: 13px;
+    display: flex;
+    justify-self: flex-start;
+}
+
+.menu_du_jour .menu {
+    margin-top: 0px;
+    margin-bottom: -50px;
+}
+
