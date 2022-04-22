@@ -4,7 +4,7 @@
     font-family: 'Quantify Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Quantify Regular'), url('/police/Quantify.woff') format('woff');
+    src: local('Quantify Regular'), url('police/Quantify.woff') format('woff');
     }
     
 
@@ -12,7 +12,7 @@
     font-family: 'Quantify Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('Quantify Bold'), url('/police/Quantify\ Bold.woff') format('woff');
+    src: local('Quantify Bold'), url('police/Quantify\ Bold.woff') format('woff');
     }
 
 * {
@@ -78,7 +78,7 @@
 /*!!!!!!!!!!!!!!!!!!! BANDEAU !!!!!!!!!!!!!!!!!!!*/
 
 .bandeau {
-    background-image: url(./images/sushi-2K-wallpaper.png);
+    background-image: url(images/sushi-2K-wallpaper.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 1100px;
@@ -221,7 +221,7 @@
 }
 
 .icone_menu_slick {
-    background-image: url(./images/maki-product-image.603821d8ddf29.web.png);
+    background-image: url(images/maki-product-image.603821d8ddf29.web.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
@@ -357,7 +357,7 @@
 }
 
 .icone_menu {
-    background-image: url(./images/maki-product-image.603821d8ddf29.web.png);
+    background-image: url(images/maki-product-image.603821d8ddf29.web.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
@@ -470,7 +470,7 @@
 }
 
 .arrow_select {
-    background-image: url(./images/toppng.com-down-arrow-grey-600x380.png);
+    background-image: url(images/toppng.com-down-arrow-grey-600x380.png);
     background-repeat: no-repeat;
     background-position: right 20px center;
 }
