@@ -4,7 +4,7 @@
     font-family: 'Quantify Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Quantify Regular'), url('police/Quantify.woff') format('woff');
+    src: local('Quantify Regular'), url('../police/Quantify.woff') format('woff');
     }
     
 
@@ -12,7 +12,7 @@
     font-family: 'Quantify Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('Quantify Bold'), url('police/Quantify\ Bold.woff') format('woff');
+    src: local('Quantify Bold'), url('../police/Quantify\ Bold.woff') format('woff');
     }
 
 * {
