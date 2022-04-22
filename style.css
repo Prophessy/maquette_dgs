@@ -1,5 +1,20 @@
 /* Toute la page html */
 
+@font-face {
+    font-family: 'Quantify Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Quantify Regular'), url('/police/Quantify.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Quantify Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Quantify Bold'), url('/police/Quantify\ Bold.woff') format('woff');
+    }
+
 * {
     --green-color : #7CA640;
     --grey-color : #F1F1F1;
@@ -39,17 +54,16 @@
     align-items: center;
     font-family: var(--navbar-font);
     font-size: 15px;
-    font-weight: 600;
 }
 
 .navbar_left i {
     color: var(--green-color);
 }
 
-.navbar_middle {
+.navbar_middle p {
     color: var(--green-color);
     font-size: 35px;
-    font-weight: 1000;
+    font-family: 'Quantify Regular';
 }
 
 .navbar_right {
@@ -59,7 +73,6 @@
     align-items: center;
     font-family: var(--navbar-font);
     font-size: 15px;
-    font-weight: 600;
 }
 
 /*!!!!!!!!!!!!!!!!!!! BANDEAU !!!!!!!!!!!!!!!!!!!*/
