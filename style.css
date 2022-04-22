@@ -208,9 +208,10 @@
 }
 
 .icone_menu_slick {
-    background-image: url(./images/i8238-maki-sushi.jpeg);
+    background-image: url(./images/maki-product-image.603821d8ddf29.web.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: black;
     height: 160px;
     width: 160px;
     border-radius: 100px;
@@ -343,9 +344,10 @@
 }
 
 .icone_menu {
-    background-image: url(./images/i8238-maki-sushi.jpeg);
+    background-image: url(./images/maki-product-image.603821d8ddf29.web.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: black;
     height: 160px;
     width: 160px;
     border-radius: 100px;
@@ -358,7 +360,7 @@
 
 .rond_icone {
     position: absolute;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     width: 270px;
     height: 115px;
     border-radius: 0 0 50% 50%/ 0px 0px 100% 100%;
@@ -412,7 +414,7 @@
 
 .reservation_wrapper {
     width: 630px;
-    height: 700px;
+    height: 100%;
 }
 
 .reservation_wrapper h2 {
@@ -433,8 +435,9 @@
 .reservation_wrapper p {
     font-family: var(--corps-font);
     text-align: start;
-    margin-top: 30px;
+    margin-top: 40px;
     color: rgb(143, 143, 143);
+    margin-bottom: 40px;
 }
 
 .form {
@@ -446,30 +449,68 @@
 }
 
 .form select {
-    width: 250px;
+    width: 280px;
     height: 40px;
     margin: 10px 5px 5px 0px;
     border: 2px solid var(--grey-color);
+    appearance: none;
+}
+
+.arrow_select {
+    background-image: url(./images/toppng.com-down-arrow-grey-600x380.png);
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+}
+
+.form select, option {
+    font-size: 12px;
+    font-weight: 1000;
+    text-align: start;
+    letter-spacing: 1px;
+    padding-left: 40px;
 }
 
 .cgu_wrapper {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: -50px;
 }
 
 .cgu_wrapper p {
-    margin-top: 0;
     color: white;
     background-color: #7CA640;
-    width: 250px;
+    width: 270px;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    border: 2px solid transparent;
+    font-size: 13px;
+}
+
+.cgu_wrapper p:hover {
+    color: black;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    border: 3px solid var(--green-color);
+    cursor: pointer;
+}
+
+input[type="checkbox"]:hover {
+    background-color: var(--green-color);
+    transition-duration: 0.2s;
 }
 
 .cgu_wrapper label {
-    font-size: 10px;
+    font-size: 13px;
+    margin-left: -50px;
 }
 
 .image_footer {
@@ -482,7 +523,7 @@
 }
 
 .image_footer img {
-    height: 550px;
+    height: 500px;
     margin-left: -200px;
 }
 
