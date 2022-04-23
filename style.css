@@ -52,6 +52,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.navbar_left p {
     font-family: var(--navbar-font);
     font-size: 15px;
 }
@@ -71,6 +74,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.navbar_right p {
     font-family: var(--navbar-font);
     font-size: 15px;
 }
@@ -154,7 +160,7 @@
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 100px;
+    height: 130px;
 }
 
 .custom-shape-divider-bottom-1650464938 .shape-fill {
@@ -163,7 +169,7 @@
 
 .custom-shape-divider-bottom-1650465143 {
     position: absolute;
-    bottom: 0;
+    bottom: 6px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -174,7 +180,7 @@
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 140px;
+    height: 180px;
 }
 
 .custom-shape-divider-bottom-1650465143 .shape-fill {
@@ -331,17 +337,14 @@
     letter-spacing: 1px;
 }
 
-.menu_du_jour .menu {
-    margin-top: 0px;
-    margin-bottom: -60px;
-}
-
 .menu {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     position: relative;
+    margin-top: 0px;
+    margin-bottom: -60px;
     z-index: 1;
 }
 
@@ -395,13 +398,13 @@
 }
 
 .button_details {
-    color: rgb(197, 197, 197);
+    color: rgb(184, 184, 184);
     font-family: var(--corps-font);
     font-size: 10px;
     padding: 10px 25px;
     margin-top: 15px;
     background-color: transparent;
-    border: 2px solid rgb(197, 197, 197);
+    border: 3px solid rgb(236, 236, 236);
     margin-top: 40px;
     font-size: 13px;
 }
@@ -459,6 +462,7 @@
     flex-direction: column;
     width: 100%;
     height: 200px;
+    align-items: center;
 }
 
 .form select {
@@ -493,12 +497,13 @@
 .cgu_wrapper p {
     color: white;
     background-color: #7CA640;
-    width: 270px;
+    width: 278px;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
     border: 2px solid transparent;
     font-size: 13px;
+    margin-right: 5px;
 }
 
 .cgu_wrapper p:hover {
@@ -524,6 +529,7 @@ input[type="checkbox"]:hover {
 .cgu_wrapper label {
     font-size: 13px;
     margin-left: -50px;
+    margin-right: 15px;
 }
 
 .image_footer {
@@ -540,3 +546,184 @@ input[type="checkbox"]:hover {
     margin-left: -200px;
 }
 
+
+
+/*!!!!!!!!!!!!!!!!!!! MEDIA QUERIES RESPONSIVE !!!!!!!!!!!!!!!!!!!*/
+
+@media screen and (max-width: 1400px) {
+    .slider {
+        width: 900px;
+    }
+    .rond_icone_slick {
+        width: 245px;
+    }
+    .menu_form {
+        width: 270px;
+    }
+    .rond_icone {
+        width: 245px;
+        margin: auto;
+    }
+    .image_footer img {
+        margin-left: 0;
+    }
+    .reservation_wrapper {
+        width: 500px;
+    }
+    .form select {
+        width: 230px;
+    }
+    .form select, option {
+        padding-left: 20px;
+    }
+    .cgu_wrapper p {
+        width: 226px;
+        margin-right: 14px;
+    }
+    .cgu_wrapper label {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .menu_du_jour {
+        height: 1000px;
+    }
+    .menu {
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 900px;
+        width: 100%;
+        margin-bottom: -100px;
+    }
+    .menu_form {
+        margin-bottom: 60px;
+        width: 400px;
+    }
+    .rond_icone {
+        width: 380px;
+        margin: auto;
+    }
+    .entete_menu_du_jour {
+        width: 700px;
+    }
+    .texte_menu_du_jour {
+        margin-left: -100px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .reservation_wrapper {
+        width: 400px;
+    }
+    .form select {
+        width: 180px;
+    }
+    .form select, option {
+        padding-left: 20px;
+    }
+    .cgu_wrapper p {
+        width: 190px;
+       margin-right: 20px;
+    }
+    .form select, option {
+        font-size: 10px;
+        padding-left: 10px;
+    }
+    .arrow_select {
+        background-position: right 10px center;
+    }
+    .image_footer img {
+        height: 400px;
+        margin-bottom: -100px;
+    }
+    .slider {
+        width: 600px;
+    }
+    .rond_icone_slick {
+        width: 245px;
+    }
+}
+
+@media screen and (max-width: 862px) {
+    .menu_form {
+        margin-bottom: 60px;
+        width: 300px;
+    }
+    .rond_icone {
+        width: 280px;
+    }
+    .image_footer {
+        display: none;
+    }
+    .reservation{
+        justify-content: center;
+        margin: 0;
+    }
+    .reservation_wrapper {
+        width: 600px;
+        margin: 0;
+    }
+    .form select {
+        width: 280px;
+    }
+    .reservation_wrapper h2 {
+        text-align: center;
+    }
+    .reservation_wrapper h3 {
+        text-align: center;
+    }
+    .reservation_wrapper p {
+        text-align: center;
+    }
+    .form select, option {
+        font-size: 12px;
+        padding-left: 30px;
+    }
+    .arrow_select {
+        background-position: right 20px center;
+    }
+    .cgu_wrapper p {
+        width: 270px;
+       margin-right: -3px;
+    }
+    .navbar_left {
+        flex-direction: column;
+    }
+    .navbar_right {
+        flex-direction: column;
+    }
+    .navbar i {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .entete_menu_du_jour {
+        width: 80%;
+        height: 800px;
+        margin-top: -400px;
+    }
+    .menu_du_jour {
+        height: 1600px;
+    }
+    .menu_form {
+        width: 80%;
+    }
+    .menu {
+        flex-wrap: nowrap;
+        margin-bottom: 0;
+    }
+    .rond_icone {
+        width: 70%;
+    }
+    .button_details {
+        margin-bottom: 20px;
+    }
+    .slider {
+        width: 80%;
+    }
+    .rond_icone_slick {
+        width: 300px;
+    }
+}
