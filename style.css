@@ -205,15 +205,15 @@
 .prev-arrow {
     font-size: 20px;
     left: -40px;
-    width: 0;
-    height: 0;
+    border: transparent;
+    background-color: transparent;
 }
 
 .next-arrow {
     font-size: 20px;
-    right: 0px;
-    width: 0;
-    height: 0;
+    right: -40px;
+    border: transparent;
+    background-color: transparent;
 }
 
 .slick-slide {
