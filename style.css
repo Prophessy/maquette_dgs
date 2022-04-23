@@ -762,32 +762,37 @@ input[type="checkbox"]:hover {
     }
     .texte_menu_du_jour h2 {
         font-size: 30px;
+        
+    }
+    .texte_menu_du_jour{
+        margin-bottom: 100px;
     }
     .menu_du_jour_h2_prix {
         font-size: 30px;
+        margin-bottom: 100px;
     }
     .menu_du_jour {
-        height: 1600px;
+        height: 1700px;
     }
     .menu_form {
-        width: 80%;
+        width: 400px;
     }
     .menu {
         flex-wrap: nowrap;
         margin-bottom: 0;
     }
     .rond_icone {
-        width: 70%;
+        width: 350px;
     }
     .button_details {
         margin-bottom: 20px;
     }
     .slider {
-        width: 80%;
+        width: 400px;
     }
     .rond_icone_slick {
-        width: 300px;
-        margin-left: 50px;
+        width: 350px;
+        margin-left: 10px;
     }
     .reservation_wrapper {
         width: 80%;
@@ -816,16 +821,41 @@ input[type="checkbox"]:hover {
         width: 80%;
     }
 }
+@media screen and (max-width: 636px) {
+    .p_bandeau_1 {
+        margin-top: 0px;
+    }
+}
 
 @media screen and (max-width: 585px) {
     .menu_du_jour {
         height: 1800px;
     }
     .entete_menu_du_jour {
-        margin-top: -600px;
+        margin-top: -700px;
+        margin-bottom: 100px;
+    }
+    .texte_menu_du_jour{
+        margin-bottom: 10px;
+    }
+    .menu_du_jour_h2_prix {
+        margin-bottom: 10px;
     }
     .menu {
         margin-bottom: -200px;
+    }
+    .menu_form {
+        width: 300px;
+    }
+    .rond_icone {
+        width: 250px;
+    }
+    .slider {
+        width: 300px;
+    }
+    .rond_icone_slick {
+        width: 250px;
+        margin-left: 10px;
     }
 }
 
@@ -833,11 +863,39 @@ input[type="checkbox"]:hover {
     *{
         transition: ease all .5s;
     }
+    .bandeau h1 {
+        font-size: 30px;
+    }
+    .slider {
+        width: 250px;
+    }
+    .rond_icone_slick {
+        width: 200px;
+        margin-left: 10px;
+    }
+    .menu_form {
+        width: 250px;
+    }
+    .rond_icone {
+        width: 200px;
+    }
     .form {
         flex-wrap: nowrap;
         height: 400px;
     }
     .form select {
         width: 80%;
+    }
+    .icone_couvert {
+        display: none;
+    }
+    .texte_menu_du_jour {
+        margin-left: 0px;
+    }
+    .slide-arrow {
+        display: none;
+    }
+    .reservation_wrapper h2 {
+        font-size: 30px;
     }
 }
