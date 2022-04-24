@@ -783,7 +783,7 @@ input[type="checkbox"]:hover {
     .entete_menu_du_jour {
         width: 80%;
         height: 800px;
-        margin-top: -400px;
+        margin-top: -500px;
     }
     .texte_menu_du_jour h2 {
         font-size: 30px;
