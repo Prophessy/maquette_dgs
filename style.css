@@ -652,6 +652,7 @@ input[type="checkbox"]:hover {
     }
     .entete_menu_du_jour {
         width: 700px;
+        margin-top: 20px;
     }
     .texte_menu_du_jour {
         margin-left: -100px;
@@ -701,6 +702,9 @@ input[type="checkbox"]:hover {
     .menu_form {
         margin-bottom: 60px;
         width: 300px;
+    }
+    .entete_menu_du_jour {
+        margin-top: 20px;
     }
     .rond_icone {
         width: 280px;
